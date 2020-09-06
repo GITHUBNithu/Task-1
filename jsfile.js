@@ -5338,10 +5338,10 @@ let t3 = (epname,tt3)=>
     let len3 = searchname.embedded.episodes;
     for(let i3=0;i3<len3.length;i3++)
     {
-      let str = searchname._embedded.episodes[i3].name.toString();
+      let str = searchname.embedded.episodes[i3].name.toString();
       if(str.toUpperCase() === epname.toUpperCase())                
       {                                                             
-        console.log(`${searchname._embedded.episodes[i3].name} Episode found at the position of ${i3+1}`);
+        console.log(`${searchname.embedded.episodes[i3].name} Episode found at the position of ${i3+1}`);
       }else{}
     }
   }  
